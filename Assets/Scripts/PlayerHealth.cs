@@ -6,11 +6,11 @@ public class PlayerHealth : MonoBehaviour {
 	public int currentHealth=100;
 
 	public float healthBarLength;
-
 	// Use this for initialization
 	void Start () {
 		healthBarLength = Screen.width/2;
-	
+
+
 	}
 	
 	// Update is called once per frame
