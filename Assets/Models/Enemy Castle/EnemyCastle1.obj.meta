@@ -1,0 +1,112 @@
+fileFormatVersion: 2
+guid: 87d698b67023e4067824282f0a98e487
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Beacon
+    100002: Block_of_Coal
+    100004: Cobblestone_Stairs
+    100006: //RootNode
+    100008: Glass
+    100010: Nether_Brick
+    100012: Nether_Brick_Stairs
+    100014: Obsidian
+    100016: Quartz_Stairs
+    100018: Stained_Clay
+    100020: Stone_Slab
+    400000: Beacon
+    400002: Block_of_Coal
+    400004: Cobblestone_Stairs
+    400006: //RootNode
+    400008: Glass
+    400010: Nether_Brick
+    400012: Nether_Brick_Stairs
+    400014: Obsidian
+    400016: Quartz_Stairs
+    400018: Stained_Clay
+    400020: Stone_Slab
+    2300000: Beacon
+    2300002: Block_of_Coal
+    2300004: Cobblestone_Stairs
+    2300006: Glass
+    2300008: Nether_Brick
+    2300010: Nether_Brick_Stairs
+    2300012: Obsidian
+    2300014: Quartz_Stairs
+    2300016: Stained_Clay
+    2300018: Stone_Slab
+    3300000: Beacon
+    3300002: Block_of_Coal
+    3300004: Cobblestone_Stairs
+    3300006: Glass
+    3300008: Nether_Brick
+    3300010: Nether_Brick_Stairs
+    3300012: Obsidian
+    3300014: Quartz_Stairs
+    3300016: Stained_Clay
+    3300018: Stone_Slab
+    4300000: Beacon
+    4300002: Block_of_Coal
+    4300004: Cobblestone_Stairs
+    4300006: Glass
+    4300008: Nether_Brick
+    4300010: Nether_Brick_Stairs
+    4300012: Obsidian
+    4300014: Quartz_Stairs
+    4300016: Stained_Clay
+    4300018: Stone_Slab
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
