@@ -25,25 +25,20 @@ public class ACastleHealth : MonoBehaviour {
 
 		Rect rect = new Rect(Screen.width - 250,10,200,20);
 		Rect rect2 = new Rect(Screen.width - 250,10,200 * health / maxHealth,20);
+		Rect rect3 = new Rect(Screen.width - 200,10,200,20);
 
 		if(distance <15)
 		{
-			GUI.Label(rect,"EnemyHealth");
+
 			GUI.DrawTexture(rect,hback);
 			
 			GUI.DrawTexture(rect2,hfront);
 			GUI.DrawTexture(rect,hframe);
+			GUI.contentColor = Color.black;
+			GUI.Label(rect3,"Ally Castle Health");
+
 		}
 	}
 
-	void OnMouseDown()
-	{
 
-		if(distance < 2.5f)
-		{
-			health -= 10;
-			
-		}
-		
-	}
 }
