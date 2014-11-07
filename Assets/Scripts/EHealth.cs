@@ -9,6 +9,7 @@ public class EHealth : MonoBehaviour {
 
 	public float attackTimer;
 	public float cooldown;
+	float distance;
 
 
 	public Texture hback,hframe,hfront;
@@ -23,7 +24,7 @@ public class EHealth : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-
+		distance = Vector3.Distance(player.transform.position, transform.position);
 		if(attackTimer > 0)
 			attackTimer -= Time.deltaTime;
 		
@@ -48,34 +49,42 @@ public class EHealth : MonoBehaviour {
 		if(player != null)
 		{
 			float distance = Vector3.Distance(player.transform.position, transform.position);
+			float distance2 = Vector3.Distance(GameObject.FindGameObjectWithTag("Player").transform.position,GameObject.FindGameObjectWithTag("AllyCastle").transform.position);
+
 			if(distance < 2.5f)
 			{
 				PHealth.health -= 2;
 				
+			}
+			if(distance2 < 5)
+			{
+				ACastleHealth.health -=10;
 			}
 		}
 	}
 
 	void OnGUI()
 	{
-		float distance = Vector3.Distance(player.transform.position, transform.position);
-		float hbarwidth = 100;
-		float hbarheight = 12;
-	
-		Vector3 screenPosition = Camera.current.WorldToScreenPoint(transform.position);// gets screen position.
-		screenPosition.y = Screen.height - (screenPosition.y + 1);// inverts y
-		Rect rect = new Rect(screenPosition.x - 50,
-		                     screenPosition.y - 50, hbarwidth,hbarheight);// makes a rect centered at the player ( 100x24 )
-		Rect rect2 = new Rect(screenPosition.x - 50,
-		                     screenPosition.y - 50, hbarwidth * health / maxHealth, hbarheight);// makes a rect centered at the player ( 100x24 )
 
-		if(distance < 15)
-		{
-			GUI.DrawTexture(rect,hback);
+			
+			float hbarwidth = 100;
+			float hbarheight = 12;
+		//print (distance);
+			Vector3 screenPosition = Camera.main.WorldToScreenPoint(transform.position);// gets screen position.
+			screenPosition.y = Screen.height - (screenPosition.y + 1);// inverts y
+			Rect rect = new Rect(screenPosition.x - 50,
+			                     screenPosition.y - 50, hbarwidth,hbarheight);// makes a rect centered at the player ( 100x24 )
+			Rect rect2 = new Rect(screenPosition.x - 50,
+			                     screenPosition.y - 50, hbarwidth * health / maxHealth, hbarheight);// makes a rect centered at the player ( 100x24 )
 
-			GUI.DrawTexture(rect2,hfront);
-			GUI.DrawTexture(rect,hframe);
-		}
+			if(distance < 15)
+			{
+				GUI.DrawTexture(rect,hback);
+
+				GUI.DrawTexture(rect2,hfront);
+				GUI.DrawTexture(rect,hframe);
+			}
+
 	}
 
 	void OnMouseDown()

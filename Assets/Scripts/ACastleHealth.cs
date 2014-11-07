@@ -19,16 +19,19 @@ public class ACastleHealth : MonoBehaviour {
 
 		distance = Vector3.Distance(GameObject.FindGameObjectWithTag("Player").transform.position,GameObject.FindGameObjectWithTag("AllyCastle").transform.position);
 	
+		if(health <= 0)
+		{
+			Destroy(gameObject);
+		}
 	}
 	void OnGUI()
 	{
 
-		Rect rect = new Rect(Screen.width - 250,10,200,20);
-		Rect rect2 = new Rect(Screen.width - 250,10,200 * health / maxHealth,20);
-		Rect rect3 = new Rect(Screen.width - 200,10,200,20);
+		Rect rect = new Rect(10,30,200,20);
+		Rect rect2 = new Rect(10,30,200 * health / maxHealth,20);
+		Rect rect3 = new Rect(10,30,200,20);
 
-		if(distance <15)
-		{
+
 
 			GUI.DrawTexture(rect,hback);
 			
@@ -37,7 +40,7 @@ public class ACastleHealth : MonoBehaviour {
 			GUI.contentColor = Color.black;
 			GUI.Label(rect3,"Ally Castle Health");
 
-		}
+
 	}
 
 
